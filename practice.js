@@ -8,32 +8,36 @@
 
 ////////// PROBLEM 1 //////////
 
-// Do not edit the code below.
-var arr = [10,20,30];
-// Do not edit the code above.
+// // Do not edit the code below.
+// var arr = [10,20,30];
+// // Do not edit the code above.
 
-/*
-  Create a function named 'first' that is given 'arr' as an argument.
-  Return the first item in the given array.
-*/
+// /*
+//   Create a function named 'first' that is given 'arr' as an argument.
+//   Return the first item in the given array.
+// */
 
-//Code Here
+// //Code Here
+function first(arr){
+return arr[0];
+}
 
 
+// ////////// PROBLEM 2 //////////
 
-////////// PROBLEM 2 //////////
+// // Do not edit the code below.
+// var arr = [40,50,60];
+// // Do not edit the code above.
 
-// Do not edit the code below.
-var arr = [40,50,60];
-// Do not edit the code above.
+// /*
+//   Create a function named 'last' that is given 'arr' as an argument. 
+//   Return the last item in the given array.
+// */
 
-/*
-  Create a function named 'last' that is given 'arr' as an argument. 
-  Return the last item in the given array.
-*/
-
-//Code Here
-
+// //Code Here
+function last(arr){
+  return arr[2]
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -48,6 +52,12 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 //Code Here
+function looper(family){
+  for(let i =0; i < family.length; i++){
+    alert(family[i]);
+  } 
+}
+
 
 
 
@@ -79,6 +89,16 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 //Code Here
 
+function evenFinder(nums){
+  var even = [];
+  for(let i=0; i < nums.length; i++){
+    if(nums[i] % 2 === 0){
+    even.push(nums[i]);
+    
+    }
+  }return even;
+}
+
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -95,6 +115,19 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
+function divider(numbersArray){
+  var even = [];
+  var odd =[];
+  for(let i=0; i < numbersArray.length; i++){
+    if(numbersArray[i] % 2 === 0){
+    even.push(numbersArray[i]);
+    }else{
+      odd.push(numbersArray[i]);
+    }
+  }return [even,odd];
+
+}
+
 
 
 
@@ -116,7 +149,11 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
-
+function finder (arr){
+  var find = getRandomArbitrary();
+  return arr.indexOf(find) === -1 ? true : false
+}
+finder ([0,2,4,5,6,8,10,13,15,18,23,30]);
 
 
 ////////// PROBLEM 8 //////////
@@ -171,7 +208,9 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
+function addTen(numbers){
 
+}
 
 
 ////////// PROBLEM 11 //////////
