@@ -52,11 +52,11 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 //Code Here
-function looper(family){
-  for(let i =0; i < family.length; i++){
-    alert(family[i]);
-  } 
-}
+// function looper(family){
+//   for(let i =0; i < family.length; i++){
+//     alert(family[i]);
+//   } 
+// }
 
 
 
@@ -73,7 +73,14 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+// function reversedLooper(letters){
+//     for (var i = letters.length - 1; i >= 0; i--){
+//       alert(letters[i])
+//       console.log(letters[i])
+//     }
+     
+//     } 
+//     reversedLooper(letters)
 
 
 ////////// PROBLEM 5 //////////
@@ -151,6 +158,7 @@ var getRandomArbitrary = function() {
 //Code Here
 function finder (arr){
   var find = getRandomArbitrary();
+  if(true){}
   return arr.indexOf(find) === -1 ? true : false
 }
 finder ([0,2,4,5,6,8,10,13,15,18,23,30]);
@@ -182,6 +190,15 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+function removeItem(myGroceryList, item) {
+  for(var i =0; i < myGroceryList.length;i++){
+    if(myGroceryList[i] === item){
+      myGroceryList.splice(i,1);
+      i--;
+    }
+  }
+  return myGroceryList;
+}
 
 
 
@@ -208,10 +225,15 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
-function addTen(numbers){
-
+function addTen(arr){
+var numberTen =[];
+for (let i = 0; i<arr.length; i++){
+  numberTen[i]+= 10;
+  numberTen.push(numbers(arr[i]));
 }
-
+return numberTen;
+}
+addTen(numbers);
 
 ////////// PROBLEM 11 //////////
 
