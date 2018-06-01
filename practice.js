@@ -20,6 +20,7 @@
 // //Code Here
 function first(arr){
 return arr[0];
+
 }
 
 
