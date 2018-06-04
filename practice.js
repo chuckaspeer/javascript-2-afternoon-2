@@ -53,11 +53,11 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 //Code Here
-// function looper(family){
-//   for(let i =0; i < family.length; i++){
-//     alert(family[i]);
-//   } 
-// }
+function looper(family){
+  for(let i =0; i < family.length; i++){
+    alert(family[i]);
+  } 
+}
 
 
 
@@ -74,14 +74,14 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-// function reversedLooper(letters){
-//     for (var i = letters.length - 1; i >= 0; i--){
-//       alert(letters[i])
-//       console.log(letters[i])
-//     }
+function reversedLooper(letters){
+    for (var i = letters.length - 1; i >= 0; i--){
+      alert(letters[i])
+      console.log(letters[i])
+    }
      
-//     } 
-//     reversedLooper(letters)
+    } 
+    reversedLooper(letters)
 
 
 ////////// PROBLEM 5 //////////
@@ -166,6 +166,7 @@ finder ([0,2,4,5,6,8,10,13,15,18,23,30]);
 
 
 ////////// PROBLEM 8 //////////
+
 
 // Do not edit the code below.
 var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
